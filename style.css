@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End reset */
+.page-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1352px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    height: 56px;
+    background-color: #d71920;
+}
+.logo{
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 20px;
+}
+.logo2{
+    display: none;
+    align-self: center;
+}
+.lup{
+    margin: 17px 30px 19px auto;
+}
+.hamburger{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px 22px 0px;
+}
+main{
+    height: 400px;
+}
+footer{
+    height: auto;
+    background-color: #2f3234;
+}
+.footer-info{
+    padding-top: 35px;
+    padding-bottom: 28px;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    color: white;
+}
+.copyright{
+    font-family: Lato;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+.footer-note{
+    display: flex;
+    justify-content: center;
+    font-family: Lato;
+    font-size: 9px;
+    text-align: center;
+    color: #747474;
+    padding: 28px 15px 25px 15px;
+    text-transform: uppercase;
+}
+.footer-info li{
+    list-style: none;
+}
+nav{
+    background-color: #d71920;
+    height: 56px;
+    display: none;
+}
+.search{
+    height: 40px;
+    border-radius: 4px;
+    background-color: white;
+    margin: 8px 20px 8px auto;
+    font-family: Lato;
+    font-size: 16px;
+    letter-spacing: 0.19px;
+    color: #b4b4b4;
+    display: flex;
+    align-items: center;
+
+}
+.products{
+    background-color: #f4f4f4;
+    width: 113px;
+    height: 41px;
+    margin: 15px 0px 0px 20px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    color: #d71920;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payments{
+    width: 113px;
+    height: 41px;
+    margin: 15px 0px 0px 0px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.isearch{
+    width: 242px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-family: Lato;
+    font-size: 16px;
+    letter-spacing: 0.19px;
+    color: #b4b4b4;
+    padding-left: 21px;
+
+}
+.logout{
+    display: none;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+.settings{
+    display: none;
+    margin-left: auto;
+    align-self: center;
+    margin-right: 20px;
+}
+.user{
+    display: none;
+    align-self: center;
+    margin-right: 16px;
+}
+.mail{
+    display: none;
+    align-self: center;
+    margin-right: 14px;
+}
+.logout{
+    display: none;
+    align-self: center;
+    margin-right: 20px;
+}
+.searchlup{
+    padding-right: 20px;
+}
+.username{
+    display: none;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.14px;
+    align-self: center;
+    margin-right: 75px;
+}
+/* @media (min-width: 360px) {
+    body{
+        display: inline-flex;
+    }
+} */
+@media (min-width: 768px) {
+    header{
+        background-color: #ac1419;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        display: none;
+    }
+    .logo2{
+        display: block;
+        margin-left: 20px;
+    }
+    .lup{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .footer-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .settings{
+        display: block;
+    }
+    .mail{
+        display: block;
+    }
+    .user{
+        display: block;
+    }
+    .logout{
+        display: block;
+    }
+}
+@media (min-width: 1023px) {
+    .logo2{
+        display: none;
+    }
+    .logo{
+        display: block;
+        margin-left: 66px;
+    }
+    .search{
+        margin-right: 66px;
+    }
+    .isearch{
+        width: 447px;
+    }
+    .logout{
+        margin-right: 66px;
+    }
+    .products{
+        margin-left: 66px;
+    }
+    .username{
+        display: block;
+    }
+    footer{
+        height: 140px;
+        padding-top: 30px;
+        padding-bottom: 38px;
+    }
+    .footer-info{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        line-height: 1;
+        margin-left: 66px;
+        width: 730px;
+        justify-content: space-around;
+    }
+    .footer-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .copyright{
+        display: flex;
+        margin-left: auto;
+        margin-right: 66px;
+    }
+    .footer-note{
+        margin: 0px 100px 0px 100px;
+    }
+}
