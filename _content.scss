@@ -1,0 +1,227 @@
+main{
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	max-width: 1220px;
+	padding-top: 31px;
+	width: 100%;
+	margin: 0 auto;
+	article{
+		padding-left: 22.5px;
+		padding-right: 22.5px;
+		.firstSection{
+			.accountBasicInfoWrapper{
+				.accountInfo{
+					.accountBasicInfo{
+						padding-bottom: 17px;
+						.accountType{
+							width: 151px;
+							height: 12px;
+							font-family: Lato;
+							font-size: 10px;
+							font-weight: normal;
+							font-stretch: normal;
+							font-style: normal;
+							line-height: normal;
+							letter-spacing: 1px;
+							color: $second-brand-color;
+							text-transform: uppercase;
+						}
+						.accountName{
+							width: 289px;
+							height: 29px;
+							font-family: Lato;
+							font-size: 24px;
+							font-weight: bold;
+							font-stretch: normal;
+							font-style: normal;
+							line-height: normal;
+							letter-spacing: 0.29px;
+							color: #000000;
+							padding-bottom: 2px;
+						}
+						.accountNumber{
+							width: 199px;
+							height: 12px;
+							font-family: Lato;
+							font-size: 10px;
+							font-weight: normal;
+							font-stretch: normal;
+							font-style: normal;
+							line-height: normal;
+							letter-spacing: 1px;
+							color: #858585;
+						}
+					}
+					.availableFunds{
+						padding-bottom: 16.5px;
+						span{
+							width: 107px;
+							height: 12px;
+							font-family: Lato;
+							font-size: 10px;
+							font-weight: normal;
+							font-stretch: normal;
+							font-style: normal;
+							line-height: normal;
+							letter-spacing: 1px;
+							color: $second-brand-color;
+							text-transform: uppercase;
+						}
+						.funds{
+							span{
+								width: 121px;
+								height: 22px;
+								font-family: Lato;
+								font-size: 18px;
+								font-weight: bold;
+								font-stretch: normal;
+								font-style: normal;
+								line-height: normal;
+								letter-spacing: normal;
+								color: $second-brand-color;
+							}
+						}
+					}
+				}
+
+					.line{
+						width: 100%;
+						height: 1px;
+						border-top: solid 1px #dbdbdb;
+						padding-bottom: 23.5px;
+					}
+
+				.buttonsSection{
+					.btn{
+						width: 100%;
+						height: 50px;
+						border-radius: 4px;
+						font-family: Lato;
+						font-size: 12px;
+						font-weight: bold;
+						font-stretch: normal;
+						font-style: normal;
+						line-height: normal;
+						letter-spacing: 0.14px;
+						text-align: center;
+						text-transform: uppercase;
+					}
+					.newBtn{
+						border: solid 1px $brand-color;
+						background-color: $brand-color;
+						color: white;
+					}
+					.historyBtn{
+						border: solid 1px #f4f4f4;
+						background-color: #f4f4f4;
+						color: $brand-color;
+						margin-top: 25px;
+						margin-bottom: 25px;
+					}
+				}
+			}
+		}
+		.secondSection{
+			.table{
+				.tableHeader{
+					display: flex;
+					justify-content: space-between;
+					height: 15px;
+					font-family: Lato;
+					font-size: 10px;
+					font-weight: normal;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: 1.5;
+					letter-spacing: 0.12px;
+					text-align: center;
+					color: #858585;
+					text-transform: uppercase;
+				}
+				.tableBody{
+					.tableRow{
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						border-top: 1px solid #dbdbdb;
+						margin-top: 9.5px;
+						.tableTransactionDate{
+							width: 37px;
+							height: 15px;
+							font-family: Lato;
+							font-size: 14px;
+							font-weight: 900;
+							font-stretch: normal;
+							font-style: normal;
+							line-height: 1.07;
+							letter-spacing: 0.17px;
+							text-align: center;
+							color: $second-brand-color;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+@media screen and (min-width: $breakpoint-tablet){
+	main{
+		article{
+			.firstSection{
+				.accountBasicInfoWrapper{
+					display: flex;
+					flex-direction: column;
+					.accountInfo{
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						.accountBasicInfo{
+							display: flex;
+							flex-direction: column;
+						}
+						.availableFunds{
+							display: flex;
+							flex-direction: column;
+							span{
+								display: block;
+								margin-left: auto;
+							}
+							.funds{
+								width: 175px;
+								height: 32px;
+								font-family: Lato;
+								font-size: 26px;
+								font-weight: 900;
+								font-stretch: normal;
+								font-style: normal;
+								line-height: normal;
+								letter-spacing: normal;
+								text-align: right;
+							}
+						}
+
+					}
+					.buttonsSection{
+						display: flex;
+						flex-direction: row;
+						.btn{
+							width: 210px;
+							height: 50px;
+						}
+						.newBtn{
+							margin-right: 20px;
+						}
+						.historyBtn{
+							margin-top: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $breakpoint-desktop){
+
+}
