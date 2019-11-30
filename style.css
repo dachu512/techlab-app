@@ -52,7 +52,7 @@ table {
     flex-direction: column;
     justify-content: center;
 }
-body{
+/* body{
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -84,11 +84,11 @@ header{
     display: flex;
     justify-content: flex-end;
     margin: 20px 20px 22px 0px;
-}
+} */
 main{
     height: 400px;
 }
-footer{
+/* footer{
     height: auto;
     background-color: #2f3234;
 }
@@ -119,13 +119,13 @@ footer{
 }
 .footer-info li{
     list-style: none;
-}
-nav{
+} */
+/* nav{
     background-color: #d71920;
     height: 56px;
     display: none;
-}
-.search{
+} */
+/* .search{
     height: 40px;
     border-radius: 4px;
     background-color: white;
@@ -137,8 +137,8 @@ nav{
     display: flex;
     align-items: center;
 
-}
-.products{
+} */
+/* .products{
     background-color: #f4f4f4;
     width: 113px;
     height: 41px;
@@ -150,8 +150,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.payments{
+} */
+/* .payments{
     width: 113px;
     height: 41px;
     margin: 15px 0px 0px 0px;
@@ -162,8 +162,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.isearch{
+} */
+/* .isearch{
     width: 242px;
     height: 40px;
     border-radius: 4px;
@@ -174,39 +174,39 @@ nav{
     color: #b4b4b4;
     padding-left: 21px;
 
-}
-.logout{
+} */
+/* .logout{
     display: none;
     font-family: Lato;
     font-size: 12px;
     font-weight: bold;
     color: white;
-}
-.settings{
+} */
+/* .settings{
     display: none;
     margin-left: auto;
     align-self: center;
     margin-right: 20px;
-}
-.user{
+} */
+/* .user{
     display: none;
     align-self: center;
     margin-right: 16px;
-}
-.mail{
+} */
+/* .mail{
     display: none;
     align-self: center;
     margin-right: 14px;
-}
-.logout{
+} */
+/* .logout{
     display: none;
     align-self: center;
     margin-right: 20px;
-}
+} */
 .searchlup{
     padding-right: 20px;
 }
-.username{
+/* .username{
     display: none;
     font-family: Lato;
     font-size: 12px;
@@ -215,7 +215,7 @@ nav{
     letter-spacing: 0.14px;
     align-self: center;
     margin-right: 75px;
-}
+} */
 /* @media (min-width: 360px) {
     body{
         display: inline-flex;

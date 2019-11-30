@@ -1,3 +1,15 @@
+%table-header {
+font-family: Lato;
+font-size: 10px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.5;
+letter-spacing: 0.12px;
+color: #858585;
+}
+
+
 main{
 	display: flex;
 	flex-direction: column;
@@ -7,9 +19,9 @@ main{
 	width: 100%;
 	margin: 0 auto;
 	article{
-		padding-left: 22.5px;
-		padding-right: 22.5px;
 		.firstSection{
+			padding-right: 20px;
+			padding-left: 20px;
 			.accountBasicInfoWrapper{
 				.accountInfo{
 					.accountBasicInfo{
@@ -69,16 +81,24 @@ main{
 							text-transform: uppercase;
 						}
 						.funds{
+							width: 121px;
+							height: 22px;
+							font-family: Lato;
+							font-size: 18px;
+							font-weight: bold;
+							font-stretch: normal;
+							font-style: normal;
+							line-height: normal;
+							letter-spacing: normal;
+							color: $second-brand-color;
 							span{
-								width: 121px;
-								height: 22px;
 								font-family: Lato;
-								font-size: 18px;
-								font-weight: bold;
+								font-size: 10px;
+								font-weight: normal;
 								font-stretch: normal;
 								font-style: normal;
 								line-height: normal;
-								letter-spacing: normal;
+								letter-spacing: 1px;
 								color: $second-brand-color;
 							}
 						}
@@ -140,6 +160,13 @@ main{
 					text-transform: uppercase;
 				}
 				.tableBody{
+					.tableHead{
+						display: flex;
+						flex-direction: row;
+						.tableTransactionDate{
+							@extend %table-header;
+						}
+					}
 					.tableRow{
 						display: flex;
 						flex-direction: row;
@@ -168,11 +195,20 @@ main{
 }
 @media screen and (min-width: $breakpoint-tablet){
 	main{
+		background-color: #f4f4f4;
+		padding-top: 0px;
 		article{
+			margin: 40px 20px 0 20px;
+			border: solid 1px #dbdbdb;
+			background-color: white;
 			.firstSection{
 				.accountBasicInfoWrapper{
 					display: flex;
 					flex-direction: column;
+					margin-top: 22px;
+					.line{
+						display: none;
+					}
 					.accountInfo{
 						display: flex;
 						flex-direction: row;
@@ -223,5 +259,9 @@ main{
 	}
 }
 @media screen and (min-width: $breakpoint-desktop){
-
+main{
+	article{
+		max-width: 800px;
+	}
+}
 }
