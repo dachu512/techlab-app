@@ -1,0 +1,1211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: Lato;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.transferWrapper, .formWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.username, .logout, nav .products, nav .payments {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+nav .search, .isearch {
+  font-family: Lato;
+  font-size: 16px;
+  letter-spacing: 0.19px;
+  color: #b4b4b4;
+}
+
+nav .products, nav .payments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  height: 56px;
+  background-color: #d71920;
+}
+
+.header-wrapper {
+  max-width: 1352px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-left-side {
+  padding: 18px 0 18px 20px;
+}
+
+.header-right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lup {
+  margin-right: 20px;
+}
+
+.hamburger {
+  margin-right: 30px;
+}
+
+.logo2 {
+  display: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.settings {
+  display: none;
+  margin-left: auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: 20px;
+}
+
+.mail {
+  display: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: 20px;
+}
+
+.user {
+  display: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: 41px;
+}
+
+.username {
+  display: none;
+  letter-spacing: 0.14px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: 75px;
+}
+
+.logout {
+  display: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+nav {
+  background-color: #d71920;
+  height: 56px;
+  display: none;
+}
+nav .products {
+  background-color: #f4f4f4;
+  width: 113px;
+  height: 41px;
+  margin: 15px 0px 0px 20px;
+  color: #d71920;
+}
+nav .payments {
+  width: 113px;
+  height: 41px;
+  margin: 15px 0px 0px 0px;
+}
+nav .search {
+  height: 40px;
+  border-radius: 4px;
+  background-color: white;
+  margin: 8px 20px 8px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.isearch {
+  width: 280px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding-left: 21px;
+  background-image: url("../images/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 90% center;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    display: none;
+  }
+
+  .logo2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .lup {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .settings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .logout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 20px;
+  }
+
+  header {
+    background-color: #ac1419;
+  }
+
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 1023px) {
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 46px;
+  }
+
+  .logo2 {
+    display: none;
+  }
+
+  .search {
+    margin-right: 66px;
+  }
+
+  .isearch {
+    width: 485px;
+  }
+
+  .logout {
+    margin-right: 66px;
+  }
+
+  .products {
+    margin-left: 66px;
+  }
+
+  .username {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .user {
+    margin-right: 16px;
+  }
+
+  nav {
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+  nav .products {
+    margin-left: 0;
+  }
+  nav .search {
+    margin-right: 0;
+  }
+}
+.tableHead .tableTransactionDate, .tableHead .tableTransactionDate.tableHeader {
+  font-family: Lato;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.12px;
+  color: #858585;
+}
+
+.mainWrapper {
+  background-color: #f4f4f4;
+  width: 100%;
+  margin: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  max-width: 1220px;
+  padding-top: 31px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.firstSection {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.secondSection {
+  margin-bottom: 35px;
+}
+
+.accountBasicInfo {
+  padding-bottom: 17px;
+}
+
+.accountType {
+  width: 151px;
+  height: 12px;
+  font-family: Lato;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #2f3234;
+  text-transform: uppercase;
+}
+
+.accountName {
+  height: 29px;
+  color: #000000;
+  padding-bottom: 2px;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.29px;
+}
+
+.arrow {
+  display: none;
+  margin-left: 10px;
+}
+
+.accountNumber {
+  width: 199px;
+  height: 12px;
+  font-family: Lato;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #858585;
+}
+
+.availableFunds {
+  padding-bottom: 16.5px;
+}
+.availableFunds span {
+  width: 107px;
+  height: 12px;
+  font-family: Lato;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #2f3234;
+  text-transform: uppercase;
+}
+
+.funds {
+  width: 121px;
+  height: 22px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2f3234;
+}
+.funds span {
+  font-family: Lato;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #2f3234;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-top: solid 1px #dbdbdb;
+  padding-bottom: 23.5px;
+}
+
+.buttonsSection .btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.buttonsSection .newBtn {
+  border: solid 1px #d71920;
+  background-color: #d71920;
+  color: white;
+}
+.buttonsSection .historyBtn {
+  border: solid 1px #f4f4f4;
+  background-color: #f4f4f4;
+  color: #d71920;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.table {
+  margin-bottom: 27.5px;
+}
+
+.tableBody.tableRow {
+  border: 0;
+  border-bottom: solid 1px #dbdbdb;
+}
+
+.tableRow.tableHeader {
+  display: none;
+}
+
+.tableHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15px;
+  font-family: Lato;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.12px;
+  text-align: center;
+  color: #858585;
+  text-transform: uppercase;
+  border-bottom: solid 1px #dbdbdb;
+  width: 100%;
+}
+
+.tableHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.tableRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+  margin-top: 16.5px;
+}
+
+.tableHeaderDate {
+  margin-left: 36px;
+  margin-right: 41px;
+  font-family: Lato;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.12px;
+  text-align: center;
+  color: #858585;
+}
+
+.transactionHeaderWrapper {
+  width: 254px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tableHeaderValue {
+  margin-right: 24px;
+}
+
+.tableHeaderTitle {
+  margin-left: 37px;
+  margin-right: auto;
+}
+
+.tableHeaderValue {
+  margin-right: 21px;
+}
+
+.tableTransactionDate {
+  width: 37px;
+  height: 15px;
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.14px;
+  text-align: center;
+  color: #858585;
+  margin-left: 21px;
+  padding-bottom: 23.5px;
+}
+
+.tableTransactionType {
+  display: none;
+}
+
+.tableTransactionTitle {
+  margin-left: 14.5px;
+  margin-right: auto;
+  padding-bottom: 14.5px;
+}
+.tableTransactionTitle .transactionTitle {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.07;
+  letter-spacing: 0.17px;
+  text-align: center;
+  color: #000000;
+}
+.tableTransactionTitle .transactionType {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.14px;
+  color: #858585;
+}
+
+.tableTransactionValue {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.07;
+  letter-spacing: 0.17px;
+  text-align: left;
+  color: #000000;
+  margin-right: 21px;
+  padding-bottom: 23.5px;
+}
+
+.tableTransactionCategory {
+  display: none;
+  font-family: Lato;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.12px;
+  color: #3cae64;
+  text-transform: uppercase;
+}
+
+.showMoreBtn {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.07;
+  letter-spacing: 0.17px;
+  text-align: right;
+  color: #d71920;
+  margin-left: 32px;
+}
+
+aside {
+  display: none;
+}
+
+.aside-top {
+  height: 180px;
+  background-color: #4c92e0;
+  color: white;
+  margin: 39px 66px 41px 40px;
+}
+
+.asideTitle {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 900;
+  margin: 20px auto 17px 20px;
+}
+
+.topAsideContent {
+  font-family: Lato;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.callToActionBtn {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  margin: 22px auto 26px 20px;
+}
+
+.asideBottom {
+  font-family: Lato;
+  padding-top: 14px;
+  padding-left: 20px;
+  height: 385px;
+  border: solid 1px #dbdbdb;
+  background-color: white;
+  margin: 0px 66px 127px 40px;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.19px;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .tableRow {
+    margin-top: 0;
+  }
+
+  .tableTransactionTitle {
+    margin-left: 36px;
+    padding-top: 9.5px;
+  }
+
+  .tableTransactionDate {
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.07;
+    letter-spacing: 0.17px;
+    color: #2f3234;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-top: 17.5px;
+  }
+
+  .tableTransactionType {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 21.5px;
+    padding-top: 18.5px;
+  }
+
+  .arrow {
+    display: block;
+  }
+
+  .dateImage {
+    display: none;
+  }
+
+  .tableRow.tableHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .tableTransactionCategory {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .transactionWrapper {
+    width: 254px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 17.5px;
+  }
+
+  main {
+    background-color: #f4f4f4;
+    padding-top: 0px;
+  }
+  main article {
+    margin: 40px 20px 0 20px;
+    border: solid 1px #dbdbdb;
+    background-color: white;
+    margin-bottom: 231.5px;
+  }
+  main article .firstSection .accountBasicInfoWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 22px;
+  }
+  main article .firstSection .accountBasicInfoWrapper .line {
+    display: none;
+  }
+  main article .firstSection .accountBasicInfoWrapper .accountInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main article .firstSection .accountBasicInfoWrapper .accountInfo .accountBasicInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main article .firstSection .accountBasicInfoWrapper .accountInfo .availableFunds {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main article .firstSection .accountBasicInfoWrapper .accountInfo .availableFunds span {
+    display: block;
+    margin-left: auto;
+  }
+  main article .firstSection .accountBasicInfoWrapper .accountInfo .availableFunds .funds {
+    width: 175px;
+    height: 32px;
+    font-family: Lato;
+    font-size: 26px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+  }
+  main article .firstSection .accountBasicInfoWrapper .buttonsSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main article .firstSection .accountBasicInfoWrapper .buttonsSection .btn {
+    width: 210px;
+    height: 50px;
+  }
+  main article .firstSection .accountBasicInfoWrapper .buttonsSection .newBtn {
+    margin-right: 20px;
+  }
+  main article .firstSection .accountBasicInfoWrapper .buttonsSection .historyBtn {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  article {
+    max-width: 800px;
+    margin-left: 65px;
+  }
+
+  aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .showMoreBtn {
+    margin-bottom: 35px;
+  }
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+body .footer {
+  height: auto;
+  background-color: #f4f4f4;
+  border-top: solid 1px #979797;
+}
+body .footer .footer-row .footer-info {
+  margin-top: 35px;
+  padding-bottom: 28px;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: #858585;
+}
+body .footer .footer-row .footer-info li {
+  list-style: none;
+}
+body .footer .footer-row .copyright {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: #858585;
+}
+body .footer .footer-note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Lato;
+  font-size: 9px;
+  text-align: center;
+  color: #747474;
+  padding: 28px 15px 25px 15px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .footer-row .footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1023px) {
+  .footer {
+    height: 140px;
+    padding-bottom: 38px;
+  }
+  .footer .footer-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer .footer-row .footer-info {
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    line-height: 1;
+    margin-left: 66px;
+    width: 730px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer .footer-row .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: 66px;
+    margin-top: 35px;
+  }
+  .footer .footer-note {
+    margin: 0px 100px 0px 100px;
+  }
+}
+.color-green {
+  color: green;
+}
+
+.color-red {
+  color: red;
+}
+
+.transferWrapper {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.formWrapper {
+  margin-left: 20px;
+}
+
+.standingOrderWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+.standingOrderWrapper .standingOrderInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 24px;
+  height: 24px;
+}
+.standingOrderWrapper span {
+  font-family: Lato;
+  font-size: 14px;
+  color: #2f3234;
+  margin-top: 6px;
+  margin-left: 20px;
+}
+
+.none {
+  display: none;
+}
+
+.transferText {
+  -webkit-text-stroke: 1px #979797;
+  font-family: Lato;
+  font-size: 11px;
+  letter-spacing: 1.1px;
+  color: #2f3234;
+  margin-bottom: 9px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.textInput {
+  width: 320px;
+  height: 50px;
+  border-radius: 4px;
+  border: solid 1px #b4b4b4;
+}
+
+::-webkit-input-placeholder {
+  font-family: Lato;
+  font-size: 16px;
+  color: #858585;
+  padding-left: 21px;
+  padding-top: 13px;
+}
+
+:-ms-input-placeholder {
+  font-family: Lato;
+  font-size: 16px;
+  color: #858585;
+  padding-left: 21px;
+  padding-top: 13px;
+}
+
+::-ms-input-placeholder {
+  font-family: Lato;
+  font-size: 16px;
+  color: #858585;
+  padding-left: 21px;
+  padding-top: 13px;
+}
+
+::placeholder {
+  font-family: Lato;
+  font-size: 16px;
+  color: #858585;
+  padding-left: 21px;
+  padding-top: 13px;
+}
+
+.titleHeader {
+  font-family: Lato;
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 25px;
+}
+
+.title {
+  background-color: #f4f4f4;
+  height: 82px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.destinationAccountInput {
+  height: 48px;
+  padding: 0;
+}
+
+.destinationAccountWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 4px;
+  border: solid 1px #ac1419;
+  width: 400px;
+}
+.destinationAccountWrapper > span {
+  font-family: Lato;
+  font-size: 16px;
+  position: relative;
+  height: 29px;
+  background-color: #ac1419;
+  color: white;
+  padding-left: 21px;
+  padding-top: 9px;
+}
+
+.submitBtn {
+  width: 230px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #d71920;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  margin-top: 26px;
+}
+
+.closeIcon {
+  margin-left: auto;
+}
+
+.transferFormFooter {
+  height: 102px;
+  -webkit-box-shadow: 0 0 10px 0.2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 0.2px rgba(0, 0, 0, 0.2);
+  background-color: #f4f4f4;
+  margin-top: 232px;
+}
+
+@media screen and (min-width: 768px) {
+  .transferWrapper {
+    width: 768px;
+    margin-top: 24px;
+  }
+
+  .formWrapper {
+    max-width: 728px;
+  }
+
+  .textInput {
+    width: 726px;
+  }
+
+  .destinationAccountWrapper {
+    width: 728px;
+  }
+
+  .transferValueWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .valueWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .valueWrapper .transferValueInput {
+    width: 230px;
+    margin-right: 19px;
+  }
+
+  .titleWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .titleWrapper .transferTitleInput {
+    width: 479px;
+  }
+
+  .transferFormFooter {
+    width: 768px;
+  }
+
+  .closeIcon {
+    margin-right: 19.8px;
+  }
+
+  .titleHeader {
+    margin-left: 20px;
+  }
+
+  .transferFormFooter {
+    width: 767px;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+
+  .submitBtn {
+    margin-left: 518px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .transferWrapper {
+    width: 1260px;
+  }
+
+  .formWrapper {
+    max-width: 728px;
+  }
+
+  .textInput {
+    width: 726px;
+  }
+
+  .destinationAccountWrapper {
+    width: 728px;
+  }
+
+  .titleHeader {
+    margin-left: 265px;
+  }
+
+  .transferFormFooter {
+    width: 1258px;
+    -webkit-transform: translateX(-266px);
+            transform: translateX(-266px);
+  }
+
+  .submitBtn {
+    margin-left: 764px;
+  }
+}

@@ -1,0 +1,33 @@
+$brand-color: #d71920;
+$second-brand-color: #2f3234;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1023px;
+$max-width-desktop: 1352px;
+$white-two: #f4f4f4;
+
+//PLACEHOLDERS
+%flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+// HEADER PLACEHOLDERS
+%small-text {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+%medium-text {
+    font-family: Lato;
+    font-size: 16px;
+    letter-spacing: 0.19px;
+    color: #b4b4b4;
+}
+%center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// CONTENT PLACEHOLDERS

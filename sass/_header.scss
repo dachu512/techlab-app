@@ -1,0 +1,172 @@
+
+header{
+    height: 56px;
+    background-color: $brand-color;
+
+}
+.header-wrapper{
+    max-width: 1352px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header-left-side{
+    padding: 18px 0 18px 20px;
+}
+.header-right-side{
+    display: flex;
+    align-items: center;
+}
+.lup{
+    margin-right: 20px;
+}
+.hamburger{
+    margin-right: 30px;
+}
+
+.logo2{
+    display: none;
+    align-self: center;
+}
+.settings{
+    display: none;
+    margin-left: auto;
+    align-self: center;
+    margin-right: 20px;
+}        
+.mail{
+    display: none;
+    align-self: center;
+    margin-right: 20px;
+}
+.user{
+    display: none;
+    align-self: center;
+    margin-right: 41px;
+}
+.username{
+    display: none;
+    letter-spacing: 0.14px;
+    align-self: center;
+    margin-right: 75px;
+    @extend %small-text;
+}
+.logout{
+    display: none;
+    align-self: center;
+    @extend %small-text;
+}
+
+nav{
+    background-color: $brand-color;
+    height: 56px;
+    display: none;
+    .products{
+        background-color: #f4f4f4;
+        width: 113px;
+        height: 41px;
+        margin: 15px 0px 0px 20px;
+        @extend %center-content;
+        @extend %small-text;
+        color: $brand-color;
+    }
+    .payments{
+        width: 113px;
+        height: 41px;
+        margin: 15px 0px 0px 0px;
+        @extend %small-text;
+        @extend %center-content;
+    }
+    .search{
+        height: 40px;
+        border-radius: 4px;
+        background-color: white;
+        margin: 8px 20px 8px auto;
+        display: flex;
+        align-items: center;
+        @extend %medium-text;
+    }
+}
+.isearch{
+    width: 280px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding-left: 21px;
+    background-image: url("../images/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    @extend %medium-text
+}
+
+
+@media screen and (min-width: $breakpoint-tablet){
+    .logo{
+        display: none;
+    }
+    .logo2{
+        display: flex;
+    }
+    .lup{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .settings{
+        display: flex;
+    }
+    .mail{
+        display: flex;
+    }
+    .user{
+        display: flex;
+    }
+    .logout{
+        display: flex;
+        margin-right: 20px;
+    }
+    header{
+        background-color: #ac1419;
+    }
+    nav{
+        display: flex;
+    }
+}
+@media (min-width: $breakpoint-desktop) {
+    .logo{
+        display: flex;
+        margin-left: 46px;
+    }
+    .logo2{
+        display: none;
+    }
+    .search{
+        margin-right: 66px;
+    }
+    .isearch{
+        width: 485px;
+    }
+    .logout{
+        margin-right: 66px;
+    }
+    .products{
+        margin-left: 66px;
+    }
+    .username{
+        display: flex;
+    }
+    .user{
+        margin-right: 16px;
+    }
+    nav{
+        padding-left: 66px;
+        padding-right: 66px;
+        .products{
+            margin-left: 0;
+        }
+        .search{
+            margin-right: 0;
+        }
+    }
+}
