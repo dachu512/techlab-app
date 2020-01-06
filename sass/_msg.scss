@@ -1,0 +1,83 @@
+.successMsg{
+    width: 100%;
+    height: 330px;
+    background-color: #3ca933;
+}
+.msgHeader{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+    .msgHeaderTitle{
+        font-family: Lato;
+        font-size: 16px;
+        color: white;
+        margin-top: 21px;
+    }
+    .successImg{
+        width: 20px;
+        height: 14px;
+        object-fit: contain;
+        margin-right: 15px;
+        margin-left: 20px;
+        margin-top: 24px;
+    }
+    .exitBtn{
+        transform: translateX(50%) translateY(50%) translateY(-1px) translateX(-1px);
+    }
+    .exitBtnBorder{
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+        border: solid 1px rgba(255, 255, 255, 0.5);
+        margin-left: auto;
+        margin-right: 18px;
+        margin-top: 18px;
+    }
+}
+.msgElement{
+    margin-left: 55px;
+    margin-bottom: 20px;
+    .msgElementTitle{
+        height: 13px;
+        font-family: Lato;
+        font-size: 11px;
+        letter-spacing: 1.1px;
+        color: white;
+        text-transform: uppercase;
+    }
+    .msgElementBody{
+        height: 19px;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        color: white;
+        margin-top: 4px;
+    }
+    .msgElementFooter{
+        height: 13px;
+        font-family: Lato;
+        font-size: 11px;
+        letter-spacing: 1.1px;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 4px;
+    }
+}
+.msgBtn{
+    width: 186px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgba(47, 50, 52, 0.3);
+    font-family: Lato;
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    color: white;
+    margin-left: 54px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

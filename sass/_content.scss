@@ -19,7 +19,6 @@ main{
 	flex-direction: row;
 	justify-items: center;
 	max-width: 1220px;
-	padding-top: 31px;
 	width: 100%;
 	margin: 0 auto;
 	background-color: white;
@@ -48,6 +47,7 @@ article{
 	letter-spacing: 1px;
 	color: $second-brand-color;
 	text-transform: uppercase;
+	margin-top: 31px;
 }
 .accountName{
 	height: 29px;
@@ -303,6 +303,14 @@ aside{
 	color: #000000;
 }
 @media screen and (min-width: $breakpoint-tablet){
+// .successMsg{
+// 	height: 272px;
+// 	width: 100vw;
+// 	transform: translateX(-21px) translateY(-41px);
+// }
+.accountType{
+	margin-top: 0px;
+}
 .tableRow{
 	margin-top: 0;
 }

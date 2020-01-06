@@ -49,7 +49,7 @@
                     <p class="transferText">Na rachunek</p>
                     <div class="destinationAccountWrapper">
                         <input type="text" name="transferToAccount" class="textInput destinationAccountInput" placeholder="Wpisz rachunek odbiorcy">
-                        <span type="text">Wpisz kwotę</span>
+                        <span type="text" class="none">Wpisz rachunek odbiorcy</span>
                     </div>
 
                     <p class="transferText">Adres odbiorcy (Opcjonalnie)</p>
@@ -58,10 +58,12 @@
                         <div class="valueWrapper">
                             <p class="transferText">Kwota Przelewu</p>
                             <input type="text" name="transferValue" class="textInput transferValueInput" placeholder="PLN">
+                            <span type="text" class="none">Wpisz rachunek odbiorcy</span>
                         </div>
                         <div class="titleWrapper">
                             <p class="transferText">Tytułem</p>
                             <input type="text" name="transferTitle" class="textInput transferTitleInput" placeholder="Wpisz tytuł przelewu">
+                            <span type="text" class="none">Wpisz rachunek odbiorcy</span>
                         </div>
 
                     </div>
@@ -70,6 +72,12 @@
                     </div>
                     <p class="transferText">Nazwa zlecenia</p>
                     <input type="text" name="transferOrderName" class="textInput transferOrderNameInput" placeholder="Wpisz nazwę zlecenia">
+                    <div class="smsAuthorization none">
+                        <p>Kod autoryzacji SMS</p>
+                        <input type="text" class="textInput authorizationInput">
+                        <button class="authorizationBtn">Zatwierdź</button>
+                    </div>
+        
                     <div class="transferFormFooter">
                         <button id="submitBtn" class="submitBtn" type="submit">Dalej</button>
                     </div>
@@ -83,6 +91,31 @@
     <div class="mainWrapper">
     <main>
         <article>
+            <!-- SUCCESS MESAGGE START -->
+            <section class="successMsg none">
+                <div class="msgHeader">
+                    <img class="successImg" src="images/97.svg">
+                    <div class="msgHeaderTitle">Twój przelew został zrealizowany</div>
+                    <div class="exitBtnBorder"><img class="exitBtn" src="images/exit.svg"></div>
+                </div>
+                <div class="msgElement">
+                    <div class="msgElementTitle">Nadawca</div>
+                    <div class="msgElementBody">Moje konto Przekorzystne</div>
+                    <div class="msgElementFooter">12 1234 1234 1234 1234 1234 1234</div>
+                </div>
+                <div class="msgElement">
+                        <div class="msgElementTitle">Odbiorca</div>
+                        <div id="clientResponseName" class="msgElementBody">Marek Kowalewski</div>
+                        <div class="msgElementFooter">12 1234 1234 1234 1234 1234 1234</div>
+                    </div>
+                <div class="msgElement">
+                        <div class="msgElementTitle">Kwota</div>
+                        <div class="msgElementBody">23 100,23 PLN</div>
+                        <div class="msgElementFooter">Saldo po operacji: 123 123,12 PLN</div>
+                    </div>
+                    <div class="msgBtn">Potwierdzenie PDF</div>
+            </section>
+            <!-- SUCCESS MESAGGE END -->
             <section class="firstSection">
                 <div class="accountBasicInfoWrapper">
                     <div class="accountInfo">
@@ -197,6 +230,8 @@
     <script src="js/inputElement.js"></script>
     <script src="js/inputElementValidator.js"></script>
     <script src="js/transfer.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/apiManagement.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

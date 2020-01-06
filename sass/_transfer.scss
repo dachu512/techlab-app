@@ -12,11 +12,13 @@
     position: absolute;
     background-color: white;
     border: 1px solid black;
-    width: 100%;
+    width: 100vw;
 }
 .formWrapper{
     @extend %flex-column-center;
     margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
 }
 .standingOrderWrapper{
     display: flex;
@@ -61,10 +63,10 @@
   text-transform: uppercase;
 }
 .textInput{
-    width: 320px;
     height: 50px;
     border-radius: 4px;
     border: solid 1px #b4b4b4;
+    width: 100%;
 
 }
 ::placeholder{
@@ -79,6 +81,7 @@
   font-size: 26px;
   font-weight: bold;
   padding-top: 25px;
+  padding-left: 20px;
 }
 .title{
     background-color: $white-two;
@@ -95,7 +98,7 @@
     flex-direction: column;
     border-radius: 4px;
     border: solid 1px #ac1419;
-    width: 400px;
+    // width: 400px;
     >span{
         font-family: Lato;
         font-size: 16px;
@@ -121,6 +124,7 @@
 }
 .closeIcon{
     margin-left: auto;
+    padding-right: 20px;
 }
 .transferFormFooter{
     height: 102px;
@@ -128,10 +132,35 @@
     background-color: $white-two;
     margin-top: 232px;
 }
+.smsAuthorization{
+    display: flex;
+    margin-top: 20px;
+    p{
+        display: flex;
+        align-items: center;
+    }
+    .authorizationInput{
+        width: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .authorizationBtn{
+        width: 230px;
+        border-radius: 4px;
+        background-color: $brand-color;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: white;
+    }
+}
+.smsAuthorization.none{
+    display: none;
+}
 
 @media screen and (min-width: $breakpoint-tablet){
 .transferWrapper{
-    width: 768px;
     margin-top: 24px;
 }
 .formWrapper{
@@ -173,8 +202,8 @@
     margin-left: 20px;
 }
 .transferFormFooter{
-    width: 767px;
-    transform: translateX(-20px);
+    // width: 767px;
+    // transform: translateX(-20px);
 }
 .submitBtn{
     margin-left: 518px;
@@ -183,7 +212,6 @@
 
 @media screen and (min-width: $breakpoint-desktop) {
 .transferWrapper{
-    width: 1260px;
 }
 .formWrapper{
     max-width: 728px;
@@ -198,8 +226,8 @@
     margin-left: 265px;
 }
 .transferFormFooter{
-    width: 1258px;
-    transform: translateX(-266px);
+    // width: 1258px;
+    // transform: translateX(-266px);
 }
 .submitBtn{
     margin-left: 764px;

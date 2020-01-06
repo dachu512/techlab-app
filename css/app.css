@@ -312,6 +312,105 @@ nav .search {
     margin-right: 0;
   }
 }
+.successMsg {
+  width: 100%;
+  height: 330px;
+  background-color: #3ca933;
+}
+
+.msgHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 20px;
+}
+.msgHeader .msgHeaderTitle {
+  font-family: Lato;
+  font-size: 16px;
+  color: white;
+  margin-top: 21px;
+}
+.msgHeader .successImg {
+  width: 20px;
+  height: 14px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 15px;
+  margin-left: 20px;
+  margin-top: 24px;
+}
+.msgHeader .exitBtn {
+  -webkit-transform: translateX(50%) translateY(50%) translateY(-1px) translateX(-1px);
+          transform: translateX(50%) translateY(50%) translateY(-1px) translateX(-1px);
+}
+.msgHeader .exitBtnBorder {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  border: solid 1px rgba(255, 255, 255, 0.5);
+  margin-left: auto;
+  margin-right: 18px;
+  margin-top: 18px;
+}
+
+.msgElement {
+  margin-left: 55px;
+  margin-bottom: 20px;
+}
+.msgElement .msgElementTitle {
+  height: 13px;
+  font-family: Lato;
+  font-size: 11px;
+  letter-spacing: 1.1px;
+  color: white;
+  text-transform: uppercase;
+}
+.msgElement .msgElementBody {
+  height: 19px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: white;
+  margin-top: 4px;
+}
+.msgElement .msgElementFooter {
+  height: 13px;
+  font-family: Lato;
+  font-size: 11px;
+  letter-spacing: 1.1px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.msgBtn {
+  width: 186px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgba(47, 50, 52, 0.3);
+  font-family: Lato;
+  font-size: 12px;
+  letter-spacing: 1.1px;
+  color: white;
+  margin-left: 54px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .tableHead .tableTransactionDate, .tableHead .tableTransactionDate.tableHeader {
   font-family: Lato;
   font-size: 10px;
@@ -339,7 +438,6 @@ main {
           flex-direction: row;
   justify-items: center;
   max-width: 1220px;
-  padding-top: 31px;
   width: 100%;
   margin: 0 auto;
   background-color: white;
@@ -377,6 +475,7 @@ article {
   letter-spacing: 1px;
   color: #2f3234;
   text-transform: uppercase;
+  margin-top: 31px;
 }
 
 .accountName {
@@ -666,6 +765,10 @@ aside {
 }
 
 @media screen and (min-width: 768px) {
+  .accountType {
+    margin-top: 0px;
+  }
+
   .tableRow {
     margin-top: 0;
   }
@@ -952,11 +1055,13 @@ body .footer .footer-note {
   position: absolute;
   background-color: white;
   border: 1px solid black;
-  width: 100%;
+  width: 100vw;
 }
 
 .formWrapper {
   margin-left: 20px;
+  margin-right: 20px;
+  width: 90%;
 }
 
 .standingOrderWrapper {
@@ -998,10 +1103,10 @@ body .footer .footer-note {
 }
 
 .textInput {
-  width: 320px;
   height: 50px;
   border-radius: 4px;
   border: solid 1px #b4b4b4;
+  width: 100%;
 }
 
 ::-webkit-input-placeholder {
@@ -1041,6 +1146,7 @@ body .footer .footer-note {
   font-size: 26px;
   font-weight: bold;
   padding-top: 25px;
+  padding-left: 20px;
 }
 
 .title {
@@ -1067,7 +1173,6 @@ body .footer .footer-note {
           flex-direction: column;
   border-radius: 4px;
   border: solid 1px #ac1419;
-  width: 400px;
 }
 .destinationAccountWrapper > span {
   font-family: Lato;
@@ -1095,6 +1200,7 @@ body .footer .footer-note {
 
 .closeIcon {
   margin-left: auto;
+  padding-right: 20px;
 }
 
 .transferFormFooter {
@@ -1105,9 +1211,42 @@ body .footer .footer-note {
   margin-top: 232px;
 }
 
+.smsAuthorization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+.smsAuthorization p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.smsAuthorization .authorizationInput {
+  width: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.smsAuthorization .authorizationBtn {
+  width: 230px;
+  border-radius: 4px;
+  background-color: #d71920;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.smsAuthorization.none {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .transferWrapper {
-    width: 768px;
     margin-top: 24px;
   }
 
@@ -1168,21 +1307,11 @@ body .footer .footer-note {
     margin-left: 20px;
   }
 
-  .transferFormFooter {
-    width: 767px;
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
-  }
-
   .submitBtn {
     margin-left: 518px;
   }
 }
 @media screen and (min-width: 1023px) {
-  .transferWrapper {
-    width: 1260px;
-  }
-
   .formWrapper {
     max-width: 728px;
   }
@@ -1197,12 +1326,6 @@ body .footer .footer-note {
 
   .titleHeader {
     margin-left: 265px;
-  }
-
-  .transferFormFooter {
-    width: 1258px;
-    -webkit-transform: translateX(-266px);
-            transform: translateX(-266px);
   }
 
   .submitBtn {

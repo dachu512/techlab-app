@@ -2,6 +2,26 @@ class Validator {
 	constructor(){
         
 	}
+	getSmsAuthorization (smsCode) {
+		let data = smsCode;
+
+	    fetch(`http://localhost:3001/rest/v1/pekao-requests/postSMSToken`, {
+			method: 'POST',
+			mode: 'cors',
+			body: JSON.stringify(data)
+	    }).then(response=>{
+		    if (response.status === 200) {
+				response.json().then(response2 => {
+					const smsAuth = response2.tokenOk;
+					return smsAuth;
+				});
+				
+			}else if (response.status === 500) {
+				return false;
+			}
+		});
+		return true;
+	}
 	checkInputs(array){
 		const check = array.every(element => {
 			return element.shouldSend === true;
